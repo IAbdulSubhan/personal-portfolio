@@ -6,7 +6,7 @@ const services = () => {
     return (
         <>
             <div className='main-container py-14'>
-                <h1 className='text-center pb-16 text-5xl underline font-bold'>My Services</h1>
+                <h1 className='text-center pb-16 text-xs sm:text-sm md:text-4xl  underline font-bold'>My Services</h1>
                 <div className="services-container flex space-x-5 px-6 mt-12">
 
                     {/* 1st box */}
