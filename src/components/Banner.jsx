@@ -31,9 +31,9 @@ const Banner = () => {
                 maxHeight: '24rem',
                 maxWidth: '70rem', // Ensure it doesn't exceed the max height
             }}
-            className="flex flex-row items-center justify-center mt-2  lg:justify-between p-4 lg:p-8 text-white h-48 sm:h-64 md:h-72 lg:h-96 ">
+            className="flex flex-row items-center justify-center mt-2 lg:justify-between p-4 lg:p-8 text-white h-48 sm:h-64 md:h-72 lg:h-96 ">
             {/* Text part on the left side */}
-            <div className="flex-1 text-center lg:text-left mb-6 lg:mb-0">
+            <div className="flex-1 text-center lg:text-left mb-6 lg:mb-0 space-y-0 sm:space-y-3 lg:space-y-4">
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold">Hi, I'm</h3>
                 <h1 className="mt-2 text-xl sm:text-2xl lg:text-4xl font-bold">Abdul Subhan</h1>
                 <h2 className="mt-2 text-lg sm:text-xl lg:text-2xl">
@@ -64,19 +64,17 @@ const Banner = () => {
                     </a>
                 </div>
                 <br />
-                <a className="text-sm  sm:text-base lg:text-lg px-4 py-1 mb-15 bg-orange-500 rounded-full shadow-lg" href="/contact">
+                <a className="text-sm sm:text-base lg:text-lg px-4 py-1 mb-15 bg-orange-500 rounded-full shadow-lg" href="/contact">
                     Contact Me
                 </a>
             </div>
 
             {/* Image part on the right side */}
-            <div className="flex-1 flex justify-center lg:justify-end items-center">
+            <div className="flex-1 flex justify-center lg:justify-end items-center ">
                 <img className="rounded-full shadow w-40 h-40 sm:w-40 sm:h-40 lg:w-80 lg:h-80 object-cover" src={myImage} alt="Profile" />
             </div>
         </div>
     );
 };
-
-
 
 export default Banner;
